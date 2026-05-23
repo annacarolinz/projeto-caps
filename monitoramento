@@ -1,0 +1,16 @@
+# Simulando dados de um usuário do CAPS
+usuario = "Bolsonaro"
+assiduidade = 0.9  # 90% de presença
+humor_media = 6.7  # Escala de 1 a 10
+
+print(f"Relatório do Usuário: {usuario}")
+
+# Uma lógica simples de "IA" (Regra de Decisão)
+if assiduidade > 0.8 and humor_media > 7:
+    status = "Evolução Estável"
+elif assiduidade < 0.5:
+    status = "Alerta: Risco de Abandono/Recaída"
+else:
+    status = "Necessita Atenção da Equipe"
+
+print(f"Status Clínico: {status}")
